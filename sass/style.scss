@@ -243,6 +243,10 @@ main {
   img {
     margin-right: 8px;
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .main-nav {
@@ -315,8 +319,8 @@ main {
   }
 }
 
-.home {
-  width: 70%;
+.main-content {
+  width: 80%;
   margin-top: 36px;
   .action-panel {
     display: flex;
@@ -393,6 +397,35 @@ main {
     }
     td.col-bold {
       font-weight: bold;
+    }
+  }
+}
+
+.deposit-title {
+  margin: 45px 0 38px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 35px;
+  color: #000000;
+}
+.deposit-panels {
+  display: flex;
+  justify-content: space-between;
+  .deposit-btn {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 59px;
+    color: #000000;
+    padding: 77px 95px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $primary;
+      color: #ffffff;
     }
   }
 }
