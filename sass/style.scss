@@ -17,6 +17,7 @@ body {
   max-width: 1180px;
   width: 100%;
   margin: 0 auto;
+  height: 100%;
 }
 
 .header {
@@ -64,8 +65,14 @@ body {
   }
 }
 
+.logged-header {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
 main {
   flex: 1 0 auto;
+  background-color: #f2f2f2;
   .bg {
     background-color: $primary;
     height: 300px;
@@ -181,6 +188,211 @@ main {
     .phone {
       display: flex;
       align-items: center;
+    }
+  }
+}
+
+.logged-user {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 10px;
+  }
+  margin-right: 35px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 2.92308px;
+  color: #000000;
+}
+
+.btn {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #ffffff;
+  padding: 13px 17px;
+  border-radius: 33px;
+  border: none;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: $primary;
+  padding: 10px 38px;
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+}
+
+.exit-btn {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  &:hover {
+    background-color: lighten(#000000, 15%);
+  }
+  img {
+    margin-right: 8px;
+  }
+}
+
+.main-nav {
+  width: 260px;
+  background-color: #ffffff;
+  margin-right: 40px;
+  ul {
+    margin: 43px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: #c6c6c6;
+
+    li {
+      padding: 12px 43px;
+      border-left: 6px solid transparent;
+      svg {
+        margin-right: 24px;
+        fill: #c6c6c6;
+      }
+      &.active {
+        color: #000000;
+        border-left: 6px solid $primary;
+        svg {
+          fill: $primary;
+        }
+        a {
+          color: #000000;
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+    li.last {
+      flex: 1 0 auto;
+    }
+  }
+}
+.main-section {
+  flex: 1 0 auto;
+  background: #f2f2f2 url(../img/main-bg.svg) center right 110px no-repeat;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+}
+
+.panel {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 33px 23px;
+  h2 {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: #828282;
+    margin-bottom: 12px;
+  }
+}
+
+.home {
+  width: 70%;
+  margin-top: 36px;
+  .action-panel {
+    display: flex;
+    justify-content: space-between;
+    .title {
+      font-family: Circe;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 35px;
+      color: $primary;
+    }
+    .add-btn-icon::before {
+      content: "+";
+      position: absolute;
+      font-size: 24px;
+      font-weight: 300;
+      left: 15px;
+    }
+  }
+  .balanse-panel {
+    margin-top: 25px;
+    background: #ffffff url(../img/wallet.svg) center right 39px no-repeat;
+
+    span {
+      font-family: Circe;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 44px;
+      color: $primary;
+    }
+  }
+}
+
+.mr-18 {
+  margin-right: 18px;
+}
+
+.mr-70 {
+  margin-right: 70px;
+}
+
+.usd::before {
+  content: "$";
+}
+
+.eur::before {
+  content: "€";
+}
+
+.rub::before {
+  content: "₽";
+}
+
+.rates-panel {
+  margin-top: 10px;
+  background: #ffffff url(../img/logo-cbr.png) bottom 29px right 23px no-repeat;
+  .titles {
+    display: flex;
+    justify-content: space-between;
+  }
+  table {
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+    border-collapse: collapse;
+    td.col-primary {
+      color: $primary;
+      padding: 0 25px;
+    }
+    td.col-bold {
+      font-weight: bold;
     }
   }
 }
