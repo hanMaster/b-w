@@ -41,15 +41,15 @@
                   Home</a
                 >
               </li>
-              <li class="active">
-                <a href="#">
+              <li>
+                <a href="/beneficiary.html">
                   <svg width="32" height="32">
                     <use xlink:href="img/icons.svg#folder"></use>
                   </svg>
                   Beneficiary</a
                 >
               </li>
-              <li>
+              <li class="active">
                 <a href="/deposit.html">
                   <svg width="32" height="28">
                     <use xlink:href="img/icons.svg#atm"></use>
@@ -60,7 +60,7 @@
               <li>
                 <a href="/transfer.html">
                   <svg width="35" height="28">
-                    <use xlink:href="img/icons.svg#arrow-right"></use>
+                    <use xlink:href="img/icons.svg#in-progress"></use>
                   </svg>
                   Transfer</a
                 >
@@ -70,133 +70,199 @@
           </aside>
           <div class="main-content">
             <div class="action-panel">
-              <div class="title">
-                <h1>Beneficiary</h1>
+              <div class="breadcrumbs">
+                <a href="/deposit.html" class="root__breadcrumb">Deposit</a>
+                <span class="tail__breadcrumb">→ account in USD</span>
               </div>
+              <button class="btn btn-back">come back</button>
             </div>
-            <div class="beneficiary-controls">
+
+            <div class="panel deposit-panel">
+              <div class="deposit-panel__balance">
+                <h2>Account Balanse</h2>
+                <span class="usd deposit-balance">1,000,000</span>
+              </div>
+              <a href="/deposit-usd-new.html">
+                <button class="btn btn-primary add-btn-icon">
+                  new deposit
+                </button>
+              </a>
+            </div>
+
+            <div class="search-block">
               <input
                 class="search-input"
                 type="text"
-                placeholder="find beneficiary"
+                placeholder="find deposit"
               />
-              <button class="btn btn-primary add-btn-icon">
-                new beneficiary
-              </button>
+              <a href="#" class="received-deposits">view received deposits</a>
             </div>
 
             <table class="tbl">
               <thead>
                 <tr>
+                  <th>Ref.№.</th>
                   <th>Date</th>
                   <th>Beneficiary name</th>
                   <th>Beneficiary bank name</th>
-                  <th>Currency</th>
-                  <th></th>
+                  <th>Total USD</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
+                  <td>01</td>
                   <td>12/22/20</td>
                   <td class="cell-name">J&J LTD first plate…</td>
                   <td>JPMorgan Chase</td>
-                  <td class="cell-currency">USD</td>
+                  <td class="cell-currency">46,844</td>
                   <td class="cell-action">
                     <a href="#">
-                      <svg width="35" height="28">
-                        <use xlink:href="img/icons.svg#arrow-right"></use>
+                      <svg width="26" height="27">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
                       </svg>
                     </a>
-                    <span class="tooltiptext">new transfer</span>
+                    <span class="tooltiptext">in processing</span>
                   </td>
                 </tr>
                 <tr>
+                  <td>02</td>
                   <td>12/22/20</td>
                   <td class="cell-name">J&J LTD first plate…</td>
                   <td>JPMorgan Chase</td>
-                  <td class="cell-currency">USD</td>
+                  <td class="cell-currency">11,711</td>
                   <td class="cell-action">
                     <a href="#">
                       <svg width="35" height="28">
-                        <use xlink:href="img/icons.svg#arrow-right"></use>
+                        <use xlink:href="img/icons.svg#in-progress"></use>
                       </svg>
                     </a>
-                    <span class="tooltiptext">new transfer</span>
+                    <span class="tooltiptext">in processing</span>
                   </td>
                 </tr>
                 <tr>
+                  <td>03</td>
                   <td>12/22/20</td>
                   <td class="cell-name">J&J LTD first plate…</td>
                   <td>JPMorgan Chase</td>
-                  <td class="cell-currency">USD</td>
+                  <td class="cell-currency">96,615</td>
                   <td class="cell-action">
                     <a href="#">
                       <svg width="35" height="28">
-                        <use xlink:href="img/icons.svg#arrow-right"></use>
+                        <use xlink:href="img/icons.svg#in-progress"></use>
                       </svg>
                     </a>
-                    <span class="tooltiptext">new transfer</span>
+                    <span class="tooltiptext">in processing</span>
                   </td>
                 </tr>
                 <tr>
+                  <td>04</td>
                   <td>12/22/20</td>
                   <td class="cell-name">J&J LTD first plate…</td>
                   <td>JPMorgan Chase</td>
-                  <td class="cell-currency">USD</td>
+                  <td class="cell-currency">23,546</td>
                   <td class="cell-action">
                     <a href="#">
-                      <svg width="35" height="28">
-                        <use xlink:href="img/icons.svg#arrow-right"></use>
+                      <svg width="26" height="20">
+                        <use xlink:href="img/icons.svg#deposit-done"></use>
                       </svg>
                     </a>
-                    <span class="tooltiptext">new transfer</span>
+                    <span class="tooltiptext">deposit done</span>
                   </td>
                 </tr>
                 <tr>
+                  <td>05</td>
                   <td>12/22/20</td>
                   <td class="cell-name">J&J LTD first plate…</td>
                   <td>JPMorgan Chase</td>
-                  <td class="cell-currency">USD</td>
+                  <td class="cell-currency">1,478,508</td>
                   <td class="cell-action">
                     <a href="#">
                       <svg width="35" height="28">
-                        <use xlink:href="img/icons.svg#arrow-right"></use>
+                        <use xlink:href="img/icons.svg#in-progress"></use>
                       </svg>
                     </a>
-                    <span class="tooltiptext">new transfer</span>
+                    <span class="tooltiptext">in processing</span>
                   </td>
                 </tr>
                 <tr>
+                  <td>06</td>
                   <td>12/22/20</td>
                   <td class="cell-name">J&J LTD first plate…</td>
                   <td>JPMorgan Chase</td>
-                  <td class="cell-currency">USD</td>
+                  <td class="cell-currency">23,000</td>
                   <td class="cell-action">
                     <a href="#">
                       <svg width="35" height="28">
-                        <use xlink:href="img/icons.svg#arrow-right"></use>
+                        <use xlink:href="img/icons.svg#in-progress"></use>
                       </svg>
                     </a>
-                    <span class="tooltiptext">new transfer</span>
+                    <span class="tooltiptext">in processing</span>
                   </td>
                 </tr>
                 <tr>
+                  <td>07</td>
                   <td>12/22/20</td>
                   <td class="cell-name">J&J LTD first plate…</td>
                   <td>JPMorgan Chase</td>
-                  <td class="cell-currency">USD</td>
+                  <td class="cell-currency">126,563</td>
                   <td class="cell-action">
                     <a href="#">
                       <svg width="35" height="28">
-                        <use xlink:href="img/icons.svg#arrow-right"></use>
+                        <use xlink:href="img/icons.svg#in-progress"></use>
                       </svg>
                     </a>
-                    <span class="tooltiptext">new transfer</span>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>08</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">126,563</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>09</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">126,563</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">126,563</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <p class="more"><a href="#">↓ more beneficiary</a></p>
+            <p class="more"><a href="#">↓ more deposits</a></p>
           </div>
         </div>
       </div>

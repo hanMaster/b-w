@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>B&W</title>
+  </head>
+  <body>
+    <header class="header logged-header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">
+            <img src="img/logo.svg" alt="B&W consulting" />
+          </div>
+          <div class="nav__block">
+            <div class="menu">
+              <div class="logged-user">
+                <img src="img/loged-user-icon.svg" alt="user" />
+                <span class="username">John Smith</span>
+              </div>
+              <button class="btn exit-btn">
+                <img src="img/exit-icon.svg" alt="exit" />
+                <a href="/signin.html">Logout</a>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="main-section">
+      <div class="container">
+        <div class="content">
+          <aside class="main-nav">
+            <ul>
+              <li>
+                <a href="/home.html">
+                  <svg width="32" height="29">
+                    <use xlink:href="img/icons.svg#wallet"></use>
+                  </svg>
+                  Home</a
+                >
+              </li>
+              <li>
+                <a href="/beneficiary.html">
+                  <svg width="32" height="32">
+                    <use xlink:href="img/icons.svg#folder"></use>
+                  </svg>
+                  Beneficiary</a
+                >
+              </li>
+              <li class="active">
+                <a href="/deposit.html">
+                  <svg width="32" height="28">
+                    <use xlink:href="img/icons.svg#atm"></use>
+                  </svg>
+                  Deposit</a
+                >
+              </li>
+              <li>
+                <a href="/transfer.html">
+                  <svg width="35" height="28">
+                    <use xlink:href="img/icons.svg#in-progress"></use>
+                  </svg>
+                  Transfer</a
+                >
+              </li>
+              <li class="last"></li>
+            </ul>
+          </aside>
+          <div class="main-content">
+            <div class="action-panel">
+              <div class="breadcrumbs">
+                <a href="/deposit.html" class="root__breadcrumb">Deposit</a>
+                <span class="tail__breadcrumb">→ account in RUB</span>
+              </div>
+              <button class="btn btn-back">come back</button>
+            </div>
+
+            <div class="panel deposit-panel">
+              <div class="deposit-panel__balance">
+                <h2>Account Balanse</h2>
+                <span class="rub deposit-balance">69,711,400</span>
+              </div>
+              <button class="btn btn-primary add-btn-icon">
+                new deposit
+              </button>
+            </div>
+
+            <div class="search-block">
+              <input
+                class="search-input"
+                type="text"
+                placeholder="find deposit"
+              />
+              <a href="#" class="received-deposits">view received deposits</a>
+            </div>
+
+            <table class="tbl">
+              <thead>
+                <tr>
+                  <th>Ref.№.</th>
+                  <th>Date</th>
+                  <th>Beneficiary name</th>
+                  <th>Beneficiary bank name</th>
+                  <th>Total RUB</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">46,844</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="26" height="27">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">11,711</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">96,615</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">23,546</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="26" height="20">
+                        <use xlink:href="img/icons.svg#deposit-done"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">deposit done</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>05</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">1,478,508</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>06</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">23,000</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>07</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">126,563</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>08</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">126,563</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>09</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">126,563</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>12/22/20</td>
+                  <td class="cell-name">J&J LTD first plate…</td>
+                  <td>JPMorgan Chase</td>
+                  <td class="cell-currency">126,563</td>
+                  <td class="cell-action">
+                    <a href="#">
+                      <svg width="35" height="28">
+                        <use xlink:href="img/icons.svg#in-progress"></use>
+                      </svg>
+                    </a>
+                    <span class="tooltiptext">in processing</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="more"><a href="#">↓ more deposits</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_nav">
+          <div class="logo">
+            <img src="img/footer_logo.svg" alt="B&W" />
+          </div>
+          <div class="contacts">
+            <div class="emails">
+              <div class="email">
+                <img src="img/letter.svg" alt="email" class="icon" />
+                <a href="mailto:ipm@blackandwhite.hk">ipm@blackandwhite.hk</a>
+              </div>
+              <div class="email">
+                <img src="img/letter.svg" alt="email" class="icon" />
+                <a href="mailto:ipmruat@gmail.com">ipmruat@gmail.com</a>
+              </div>
+            </div>
+            <div class="phones">
+              <div class="phone">
+                <img src="img/phone.svg" alt="phone" class="icon" />
+                <span>+43 660 4189687</span>
+              </div>
+              <div class="phone">
+                <img src="img/phone.svg" alt="phone" class="icon" />
+                <span>+43 660 4189687</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-wrapper">
+      <div class="modal-window">
+        <div class="modal-header">
+          <div class="modal-header_header">
+            <h2>New deposit on importers in the RF</h2>
+            <span>Fill in all fields to add a new deposit</span>
+          </div>
+          <button class="btn btn-primary">
+            <svg width="20" height="15">
+              <use xlink:href="img/icons.svg#save-deposit"></use>
+            </svg>
+            save deposit
+          </button>
+        </div>
+        <div class="modal-content">
+          <input
+            type="text"
+            placeholder="Номер счета продавца для пополнения:"
+          />
+          <input
+            type="text"
+            placeholder="Дата счета продавца для пополнения:"
+          />
+          <input type="text" placeholder="Наименование банка продавца:" />
+          <input type="text" placeholder="Наименование продавца:" />
+          <input type="text" placeholder="Наименование покупателя:" />
+          <input type="text" placeholder="Сумма в рублях:" />
+          <input
+            type="text"
+            placeholder="Назначение платежа из платежного поручения:"
+          />
+        </div>
+        <div class="upload">
+          <p>
+            Добавить PDF (Платежка в PDF формате с отметкой банка исполнено)
+          </p>
+          <div class="upload-group">
+            <button class="btn btn-upload">upload file</button>
+            <p>
+              <span>uploaded</span>21.09.2020_invoise_ooo
+              gent_and_gent_production.pdf
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary">
+            <svg width="20" height="15">
+              <use xlink:href="img/icons.svg#save-deposit"></use>
+            </svg>
+            save deposit
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

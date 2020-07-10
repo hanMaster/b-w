@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  font-family: Circe;
 }
 
 .container {
@@ -32,17 +33,13 @@ body {
       text-transform: uppercase;
       display: flex;
       justify-content: space-between;
-
-      font-family: Circe;
       font-style: normal;
       font-weight: bold;
       font-size: 13px;
       line-height: 19px;
       text-align: right;
       letter-spacing: 1.9px;
-
       color: #000000;
-
       .main_menu {
         margin-right: 50px;
       }
@@ -79,7 +76,6 @@ main {
     padding: 56px;
     h1 {
       color: #ffffff;
-      font-family: Circe;
       font-style: normal;
       font-weight: bold;
       font-size: 40px;
@@ -106,7 +102,6 @@ main {
           border-bottom: 2px solid #000000;
           padding: 10px 20px 0 0;
           outline: none;
-          font-family: Circe;
           font-style: normal;
           font-weight: normal;
           font-size: 20px;
@@ -130,19 +125,18 @@ main {
         background-color: $primary;
         padding: 19px;
         width: 320px;
-        font-family: Circe;
         font-style: normal;
         font-weight: 800;
         font-size: 20px;
         color: #ffffff;
         text-transform: uppercase;
         margin-bottom: 17px;
+        outline: none;
       }
       p {
         text-align: center;
         a {
           color: $primary;
-          font-family: Circe;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
@@ -155,7 +149,6 @@ main {
 
 .footer {
   padding: 20px;
-  font-family: Circe;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -199,7 +192,6 @@ main {
     margin-right: 10px;
   }
   margin-right: 35px;
-  font-family: Circe;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -233,6 +225,18 @@ main {
   }
 }
 
+.btn-back {
+  padding: 10px 50px;
+  background-color: #000000;
+  &::before {
+    content: "←";
+    position: absolute;
+    font-size: 24px;
+    font-weight: 300;
+    left: 15px;
+  }
+}
+
 .exit-btn {
   display: flex;
   align-items: center;
@@ -258,7 +262,6 @@ main {
     list-style: none;
     display: flex;
     flex-direction: column;
-    font-family: Circe;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -309,7 +312,6 @@ main {
   border-radius: 10px;
   padding: 33px 23px;
   h2 {
-    font-family: Circe;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -326,7 +328,6 @@ main {
     display: flex;
     justify-content: space-between;
     .title h1 {
-      font-family: Circe;
       font-style: normal;
       font-weight: 800;
       font-size: 24px;
@@ -346,7 +347,6 @@ main {
     background: #ffffff url(../img/wallet.svg) center right 39px no-repeat;
 
     span {
-      font-family: Circe;
       font-style: normal;
       font-weight: bold;
       font-size: 30px;
@@ -384,7 +384,6 @@ main {
     justify-content: space-between;
   }
   table {
-    font-family: Circe;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -403,7 +402,6 @@ main {
 
 .deposit-title {
   margin: 45px 0 38px;
-  font-family: Circe;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -413,8 +411,10 @@ main {
 .deposit-panels {
   display: flex;
   justify-content: space-between;
+  a {
+    text-decoration: none;
+  }
   .deposit-btn {
-    font-family: Circe;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -422,6 +422,7 @@ main {
     color: #000000;
     padding: 77px 95px;
     cursor: pointer;
+
     transition: background-color 0.3s ease;
     &:hover {
       background-color: $primary;
@@ -457,7 +458,6 @@ main {
 
 .tbl {
   margin-top: 37px;
-  font-family: Circe;
   font-style: normal;
   width: 100%;
   border-spacing: 0 5px;
@@ -533,13 +533,12 @@ main {
       left: -20px;
       bottom: -20px;
       visibility: hidden;
-      width: 110px;
+      width: 120px;
       background-color: #fff;
       box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       padding: 6px 17px;
       z-index: 2;
-      font-family: Circe;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -554,7 +553,6 @@ main {
 
 .more {
   text-align: center;
-  font-family: Circe;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -562,8 +560,171 @@ main {
   text-align: center;
   text-decoration-line: underline;
   color: #838383;
-  margin-top: 25px;
+  margin: 25px 0 25px;
   a {
     color: inherit;
+  }
+}
+
+.breadcrumbs {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 35px;
+
+  .root__breadcrumb {
+    font-weight: 800;
+    text-decoration-line: underline;
+    color: $primary;
+  }
+
+  .tail__breadcrumb {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+  }
+}
+
+.deposit-panel {
+  display: flex;
+  margin-top: 23px;
+  padding: 16px 23px;
+  justify-content: space-between;
+  align-items: center;
+
+  .deposit-panel__balance {
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    display: inline-block;
+    margin: 0;
+  }
+  .deposit-balance {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 44px;
+    margin-left: 26px;
+    color: $primary;
+  }
+}
+
+.search-block {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.received-deposits {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  text-decoration-line: underline;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+.modal-wrapper {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .modal-window {
+    padding: 25px 30px;
+    max-width: 780px;
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    opacity: 1;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      .modal-header_header {
+        h2 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 35px;
+          color: #000000;
+        }
+        span {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 21px;
+          color: #000000;
+        }
+      }
+    }
+    .modal-content {
+      input {
+        width: 100%;
+        background: #f3f5f6;
+        border-radius: 24px;
+        border: none;
+        padding: 6px 17px 3px;
+        margin-top: 5px;
+        outline: none;
+        font-family: Circe;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        &::placeholder {
+          color: #838383;
+        }
+      }
+    }
+    .upload {
+      margin-top: 30px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000000;
+      p {
+        margin: 0;
+      }
+      .upload-group {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        color: #838383;
+        span {
+          margin-right: 10px;
+          color: $primary;
+        }
+      }
+      .btn-upload {
+        padding: 10px 50px;
+        background: #000000 url(../img/upload.svg) center left 17px no-repeat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 14px;
+      }
+    }
+    .modal-footer {
+      margin-top: 15px;
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 }
