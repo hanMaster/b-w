@@ -461,6 +461,14 @@ main {
   font-style: normal;
   width: 100%;
   border-spacing: 0 5px;
+  thead {
+    width: 100%;
+  }
+  thead tr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   thead tr th {
     text-align: left;
     color: #c6c6c6;
@@ -477,8 +485,19 @@ main {
 
     width: 100%;
   }
+
+  tbody {
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   tbody tr {
     background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
     td {
       font-weight: normal;
       font-size: 16px;
@@ -502,7 +521,7 @@ main {
       fill: #c6c6c6;
     }
   }
-  tr:hover td {
+  tr:hover {
     border-bottom: 1px solid $primary;
     border-top: 1px solid $primary;
     svg {
@@ -530,7 +549,7 @@ main {
     width: 50px;
     .tooltiptext {
       position: absolute;
-      left: -20px;
+      left: -75px;
       bottom: -20px;
       visibility: hidden;
       width: 120px;
@@ -548,6 +567,18 @@ main {
   }
   .cell-action:hover .tooltiptext {
     visibility: visible;
+  }
+}
+
+.deposit {
+  tbody {
+    height: 360px;
+  }
+}
+
+.beneficiary {
+  tbody {
+    height: 480px;
   }
 }
 
