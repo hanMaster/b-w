@@ -35,8 +35,7 @@ body {
       justify-content: space-between;
       font-style: normal;
       font-weight: bold;
-      font-size: 13px;
-      line-height: 19px;
+      font-size: 20px;
       text-align: right;
       letter-spacing: 1.9px;
       color: #000000;
@@ -72,14 +71,13 @@ main {
   background-color: #f2f2f2;
   .bg {
     background-color: $primary;
-    height: 300px;
-    padding: 56px;
+    height: 27.22vh;
+    padding: 0.0518vh;
     h1 {
       color: #ffffff;
       font-style: normal;
       font-weight: bold;
       font-size: 40px;
-      line-height: 59px;
       text-align: center;
       text-transform: uppercase;
       margin-bottom: 47px;
@@ -105,7 +103,6 @@ main {
           font-style: normal;
           font-weight: normal;
           font-size: 20px;
-          line-height: 29px;
           color: #000000;
           &::placeholder {
             color: #000000;
@@ -140,7 +137,6 @@ main {
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
-          line-height: 24px;
         }
       }
     }
@@ -152,7 +148,6 @@ main {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 24px;
   text-align: right;
   background-color: #000;
   height: 100px;
@@ -195,7 +190,6 @@ main {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 29px;
   letter-spacing: 2.92308px;
   color: #000000;
 }
@@ -205,7 +199,6 @@ main {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 24px;
   text-align: right;
   color: #ffffff;
   padding: 13px 17px;
@@ -232,6 +225,7 @@ main {
     content: "←";
     position: absolute;
     font-size: 24px;
+    line-height: 24px;
     font-weight: 300;
     left: 15px;
   }
@@ -265,7 +259,6 @@ main {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 29px;
     color: #c6c6c6;
 
     li {
@@ -315,7 +308,6 @@ main {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 29px;
     color: #828282;
     margin-bottom: 12px;
   }
@@ -331,7 +323,6 @@ main {
       font-style: normal;
       font-weight: 800;
       font-size: 24px;
-      line-height: 35px;
       color: $primary;
     }
   }
@@ -339,6 +330,7 @@ main {
     content: "+";
     position: absolute;
     font-size: 24px;
+    line-height: 27px;
     font-weight: 300;
     left: 15px;
   }
@@ -350,7 +342,6 @@ main {
       font-style: normal;
       font-weight: bold;
       font-size: 30px;
-      line-height: 44px;
       color: $primary;
     }
   }
@@ -387,7 +378,6 @@ main {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 29px;
     color: #000000;
     border-collapse: collapse;
     td.col-primary {
@@ -405,7 +395,6 @@ main {
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 35px;
   color: #000000;
 }
 .deposit-panels {
@@ -418,7 +407,6 @@ main {
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    line-height: 59px;
     color: #000000;
     padding: 77px 95px;
     cursor: pointer;
@@ -441,7 +429,6 @@ main {
   font-style: normal;
   font-weight: 350;
   font-size: 16px;
-  line-height: 24px;
   outline: none;
   max-width: 425px;
   width: 100%;
@@ -474,13 +461,12 @@ main {
     color: #c6c6c6;
     font-weight: bold;
     font-size: 14px;
-    line-height: 21px;
   }
   tr {
     border-radius: 10px;
     th,
     td {
-      padding: 19px 15px 10px;
+      padding: 15px 15px 10px;
     }
 
     width: 100%;
@@ -495,13 +481,14 @@ main {
 
   tbody tr {
     background-color: #fff;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
     td {
       font-weight: normal;
       font-size: 16px;
-      line-height: 24px;
       color: #838383;
       border: 1px solid transparent;
     }
@@ -521,7 +508,7 @@ main {
       fill: #c6c6c6;
     }
   }
-  tr:hover {
+  tbody tr:hover {
     border-bottom: 1px solid $primary;
     border-top: 1px solid $primary;
     svg {
@@ -561,7 +548,6 @@ main {
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
-      line-height: 21px;
       color: #c6c6c6;
     }
   }
@@ -587,7 +573,6 @@ main {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 29px;
   text-align: center;
   text-decoration-line: underline;
   color: #838383;
@@ -600,7 +585,6 @@ main {
 .breadcrumbs {
   font-style: normal;
   font-size: 24px;
-  line-height: 35px;
 
   .root__breadcrumb {
     font-weight: 800;
@@ -611,7 +595,6 @@ main {
   .tail__breadcrumb {
     font-weight: normal;
     font-size: 20px;
-    line-height: 29px;
     color: #000000;
   }
 }
@@ -636,7 +619,6 @@ main {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    line-height: 44px;
     margin-left: 26px;
     color: $primary;
   }
@@ -653,7 +635,6 @@ main {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 24px;
   text-align: right;
   text-decoration-line: underline;
   text-transform: lowercase;
@@ -691,14 +672,12 @@ main {
           font-style: normal;
           font-weight: bold;
           font-size: 24px;
-          line-height: 35px;
           color: #000000;
         }
         span {
           font-style: normal;
           font-weight: normal;
           font-size: 14px;
-          line-height: 21px;
           color: #000000;
         }
       }
@@ -716,7 +695,6 @@ main {
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 21px;
         &::placeholder {
           color: #838383;
         }
@@ -727,7 +705,6 @@ main {
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
-      line-height: 21px;
       color: #000000;
       p {
         margin: 0;
@@ -748,7 +725,6 @@ main {
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
-        line-height: 24px;
         margin-right: 14px;
       }
     }
@@ -757,5 +733,30 @@ main {
       display: flex;
       justify-content: flex-end;
     }
+  }
+}
+
+@media screen and (max-width: 1368px) {
+  .deposit-panels .deposit-btn {
+    padding: 55px 95px;
+  }
+  .tbl {
+    margin-top: 27px;
+  }
+  .beneficiary {
+    tbody {
+      height: 290px;
+    }
+  }
+  .deposit {
+    tbody {
+      height: 200px;
+    }
+  }
+  .more {
+    margin: 5px;
+  }
+  .search-block {
+    margin-top: 15px;
   }
 }
