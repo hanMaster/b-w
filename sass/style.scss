@@ -40,6 +40,8 @@ body {
   width: 100%;
   height: 100px;
   padding: 20px;
+  position: fixed;
+  background-color: #fff;
   .nav {
     display: flex;
     justify-content: space-between;
@@ -159,7 +161,7 @@ main {
 }
 
 .footer {
-  padding: 20px;
+  padding: 20px 20px 20px 280px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -167,6 +169,10 @@ main {
   background-color: #000;
   height: 100px;
   color: #ffffff;
+  .container {
+    width: 100%;
+    max-width: unset;
+  }
   .footer_nav {
     display: flex;
     justify-content: space-between;
@@ -264,10 +270,14 @@ main {
 
 .main-nav {
   width: 260px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
   background-color: #ffffff;
   margin-right: 40px;
   ul {
-    margin: 43px 0;
+    margin: 143px 0;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -308,11 +318,13 @@ main {
 .main-section {
   flex: 1 0 auto;
   background: #f2f2f2 url(../img/main-bg.svg) center right 110px no-repeat;
+  margin-top: 100px;
 }
 .content {
   display: flex;
   justify-content: space-between;
   height: inherit;
+  position: relative;
 }
 
 .panel {
@@ -330,7 +342,7 @@ main {
 
 .main-content {
   width: 80%;
-  margin-top: 36px;
+  margin: 36px 0 0 260px;
   .action-panel {
     display: flex;
     justify-content: space-between;
@@ -488,9 +500,9 @@ main {
   }
 
   tbody {
-    display: block;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    // display: block;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
     width: 100%;
   }
 
@@ -748,30 +760,5 @@ main {
       display: flex;
       justify-content: flex-end;
     }
-  }
-}
-
-@media screen and (max-width: 1368px) {
-  .deposit-panels .deposit-btn {
-    padding: 55px 95px;
-  }
-  .tbl {
-    margin-top: 27px;
-  }
-  .beneficiary {
-    tbody {
-      height: 290px;
-    }
-  }
-  .deposit {
-    tbody {
-      height: 200px;
-    }
-  }
-  .more {
-    margin: 5px;
-  }
-  .search-block {
-    margin-top: 15px;
   }
 }
