@@ -71,6 +71,10 @@ body {
         }
       }
 
+      ul.sign {
+        font-size: 13px;
+      }
+
       .active {
         color: $primary;
       }
@@ -87,6 +91,7 @@ main {
   flex: 1 0 auto;
   background-color: #f2f2f2;
   .bg {
+    margin-top: 100px;
     background-color: $primary;
     height: 27.22vh;
     padding: 0.0518vh;
@@ -97,7 +102,7 @@ main {
       font-size: 40px;
       text-align: center;
       text-transform: uppercase;
-      margin-bottom: 47px;
+      margin: 50px 0;
     }
 
     .login-form {
@@ -161,7 +166,7 @@ main {
 }
 
 .footer {
-  padding: 20px 20px 20px 280px;
+  padding: 20px 20px 20px 20px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -169,10 +174,6 @@ main {
   background-color: #000;
   height: 100px;
   color: #ffffff;
-  .container {
-    width: 100%;
-    max-width: unset;
-  }
   .footer_nav {
     display: flex;
     justify-content: space-between;
@@ -760,5 +761,19 @@ main {
       display: flex;
       justify-content: flex-end;
     }
+  }
+}
+
+@media (min-width: 1369px) {
+  .main-nav {
+    position: relative;
+    ul {
+      position: fixed;
+      top: 0;
+    }
+  }
+  .main-content {
+    margin-left: 0;
+    width: 74%;
   }
 }
